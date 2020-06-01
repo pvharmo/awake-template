@@ -1,6 +1,6 @@
 <template>
   <main class="section page-main-section">
-    <div class="container">
+    <div class="container small-container">
       <div class="columns">
         <aside
           v-if="computedTheme === 'sidebar-left'"
@@ -15,7 +15,7 @@
             'is-offset-2':
               oneColumnConstrained && computedTheme === 'one-column',
             'is-8': oneColumnConstrained && computedTheme === 'one-column',
-            'is-three-quarters': computedTheme !== 'one-column'
+            'is-two-thirds': computedTheme !== 'one-column'
           }"
         >
           <slot></slot>

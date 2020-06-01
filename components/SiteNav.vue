@@ -1,29 +1,12 @@
 <template>
-  <nav
-    class="navbar has-shadow is-fixed-top"
-    role="navigation"
-    aria-label="main navigation"
-  >
-    <div class="navbar-brand">
-      <nuxt-link class="navbar-item" to="/">
-        <site-logo v-if="$siteConfig.logo === 'logo-component'" />
-        <img
-          v-else
-          :src="$siteConfig.logo"
-          :alt="$siteConfig.siteName"
-          class="logo"
-        />
-      </nuxt-link>
-      <hamburger-button @click="active = !active" />
-    </div>
-
+  <nav role="navigation" aria-label="main navigation">
     <div
       :class="{
         'navbar-menu': true,
         'is-active': active
       }"
     >
-      <ul class="navbar-end">
+      <ul class="navbar-end navbar-center">
         <li
           v-for="item in $siteConfig.mainMenu"
           :key="item.link"
@@ -75,5 +58,28 @@ export default {
 
 .navbar-menu a {
   display: block;
+}
+
+.navbar-center {
+  margin-right: auto;
+}
+
+.navbar-menu {
+  width: 1150px;
+  margin: auto;
+  border-color: #eee;
+  border-width: 3px;
+  border-style: solid none;
+  padding: 30px;
+}
+
+.navbar-menu a {
+  font-family: 'Quattrocento Sans';
+  color: #999;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-menu a:hover {
+  color: #1c7c7c;
 }
 </style>

@@ -9,8 +9,8 @@ import theCMS from '../cms/netlify/cms'
  * General Site configurations
  */
 export default {
-  siteName: 'Awake',
-  tagline: 'A Nuxt.js Theme for Netlify CMS',
+  siteName: 'Un éléphant dans la pièce',
+  tagline: 'Un blogue sur le sens caché des films contemporains',
   featureImage: '/uploads/home-hero.jpg',
   logo: 'logo-component', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
@@ -19,30 +19,24 @@ export default {
   },
   mainMenu: [
     {
-      name: 'About',
+      name: 'HOME',
+      link: '/'
+    },
+    {
+      name: 'ABOUT',
       link: '/about'
     },
     {
-      name: 'Contact',
+      name: 'FAQ',
+      link: '/faq'
+    },
+    {
+      name: 'CONTACT',
       link: '/contact'
-    },
-    {
-      name: 'Categories',
-      link: '/categories'
-    },
-    {
-      name: 'Github Repo',
-      link: 'https://github.com/danielkellyio/awake-template',
-      target: '_blank'
-    },
-    {
-      name: 'Awake+ Premium',
-      link: 'https://awake-premium-lp.netlify.com/',
-      target: '_blank'
     }
   ],
   hero: {
-    theme: 'dark' // options: mist, light, dark
+    theme: 'light' // options: mist, light, dark
   },
 
   // Main Layout/Style

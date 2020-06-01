@@ -1,6 +1,7 @@
 <template>
   <resource-grid
     v-bind="$props"
+    :per-row="perRow"
     :resource="$cms.post"
     :theme="$siteConfig.posts.theme || $siteConfig.cards.theme || null"
   >
