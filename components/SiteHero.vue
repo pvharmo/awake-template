@@ -64,19 +64,24 @@ export default {
 }
 
 .title {
+  color: #666;
   font-weight: 300;
   @media (min-width: 768px) {
-    font-size: 3.2rem;
+    font-size: 27px;
+    font-family: 'Roboto Slab', Georgia, Times, serif;
   }
 }
 .subtitle,
 .under-subtitle {
+  color: #999;
   padding: 0;
   margin: 0;
 }
 .subtitle {
+  font-weight: 300;
   font-size: 1rem;
   margin-bottom: 0 !important;
+  margin-top: -10px !important;
 }
 .under-subtitle {
   display: inline-block;
@@ -101,7 +106,7 @@ export default {
     // right: 0;
     // bottom: 0;
     // object-fit: cover;
-    width: 300px;
+    height: 200px;
     // height: 100%;
   }
   .opti-image {
@@ -156,6 +161,6 @@ export default {
   }
 }
 .hero-body {
-  padding-bottom: 20px !important;
+  padding-bottom: 3px !important;
 }
 </style>

@@ -28,23 +28,17 @@
             analyses herméneutiques.
           </p>
           <h3 class="subtitle">
-            All Categories
+            Categories
           </h3>
-          <div class="panel">
-            <nuxt-link
-              v-for="cat in allCats"
-              :key="cat.slug"
-              :to="`/categories/${cat.slug}`"
-              :class="{
-                'panel-block': true,
-                'is-active': cat.slug === $route.params.single
-              }"
-            >
-              {{ cat.name }}
-            </nuxt-link>
-          </div>
-          <h3>Subscribe</h3>
-          <news-letter-form />
+          <ul>
+            <li v-for="cat in allCats" :key="cat.slug">
+              <nuxt-link :to="`/categories/${cat.slug}`">
+                {{ cat.name }}
+              </nuxt-link>
+            </li>
+          </ul>
+          <h3 class="subtitle">Subscribe</h3>
+          <news-letter-form class="newsletter-form" />
         </div>
       </template>
     </main-section>
@@ -153,3 +147,50 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.content {
+  margin-left: 10px;
+}
+.content h3 {
+  font-size: 18px;
+}
+.content p {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 31px;
+}
+.content .subtitle {
+  padding-top: 30px;
+}
+
+ul {
+  margin-left: 0;
+}
+
+li {
+  list-style: none;
+  padding: 6px 0 0;
+  margin: 6px 0 0;
+  border-top: 1px solid #eee;
+}
+
+li a {
+  line-height: 31px;
+  font-size: 15px;
+  color: #1c7c7c;
+  transition: all 0.2s ease-in-out;
+}
+li a:hover {
+  color: #666;
+}
+
+.newsletter-form {
+  padding-top: 10px;
+}
+
+.content img {
+  width: 85%;
+  margin-left: 10px;
+}
+</style>

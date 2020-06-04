@@ -22,7 +22,7 @@
         </div>
         <aside
           v-if="computedTheme === 'sidebar-right'"
-          class="column right-sidebar is-one-quarter"
+          class="column right-sidebar is-one-third"
         >
           <slot name="sidebar"></slot>
         </aside>
@@ -53,7 +53,8 @@ export default {
 
 <style lang="scss">
 .page-main-section {
-  margin-top: 52px;
+  // margin-top: 52px;
+  padding-top: 27px;
 }
 .hero + .page-main-section {
   margin-top: initial;
@@ -66,5 +67,9 @@ export default {
   &.left-sidebar {
     border-right: 1px solid #eee;
   }
+}
+
+.small-container {
+  max-width: 937px;
 }
 </style>

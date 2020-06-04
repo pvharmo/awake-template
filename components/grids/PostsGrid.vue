@@ -6,22 +6,23 @@
     :theme="$siteConfig.posts.theme || $siteConfig.cards.theme || null"
   >
     <template v-slot:default="{ item }">
-      <post-card
+      <article-preview
         :title="item.title"
         :link="item.slug ? `/${item.slug}` : ''"
         :image="item.featureImage"
         :author="item.author"
         :date="item.date"
+        :excerpt="item.excerpt"
       />
     </template>
   </resource-grid>
 </template>
 
 <script>
-import PostCard from '~/components/cards/PostCard'
+import ArticlePreview from '~/components/cards/ArticlePreview'
 export default {
   name: 'PostsGrid',
-  components: { PostCard },
+  components: { ArticlePreview },
   props: {
     perRow: { type: Number, default: 3 },
     number: { type: Number, default: 0 },

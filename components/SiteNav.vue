@@ -65,15 +65,16 @@ export default {
 }
 
 .navbar-menu {
-  width: 1150px;
+  max-width: 937px;
   margin: auto;
   border-color: #eee;
   border-width: 3px;
   border-style: solid none;
-  padding: 30px;
+  padding: 27px;
 }
 
 .navbar-menu a {
+  font-size: 13px;
   font-family: 'Quattrocento Sans';
   color: #999;
   transition: all 0.2s ease-in-out;

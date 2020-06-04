@@ -21,7 +21,7 @@
           </span>
         </p>
         <div class="control">
-          <button type="submit" class="button is-primary">
+          <button type="submit" class="button">
             {{ $siteConfig.newsletter.btnText || 'Subscribe' }}
           </button>
         </div>
@@ -47,3 +47,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.control button {
+  color: #999;
+}
+</style>

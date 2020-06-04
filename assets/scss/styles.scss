@@ -10,13 +10,17 @@
 a,
 p {
   font-family: 'Quattrocento Sans', Roboto;
+  color: #666;
+  font-size: 18px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
   font-family: 'Roboto Slab', Georgia, Times, serif;
+  color: #666;
+  font-weight: 400;
 }
