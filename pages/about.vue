@@ -60,12 +60,8 @@
         And so, the next question becomes: is there a discipline, a tradition of
         sorts, that helps us navigate towards a better understanding of the film
         under scrutiny? We believe to have found such explicit yet flexible
-        guidelines in the tradition of hermeneutics.
-      </p>
-      <p>
-        Let us now introduce some of the elements of hermeneutics that will
-        guide us for our opening analysis of the films we have chosen to work
-        on.
+        guidelines in the tradition of
+        <nuxt-link to="/hermeneutics">hermeneutics</nuxt-link>.
       </p>
       <h3>STILL MORE ABOUT US</h3>
       <p>
@@ -107,8 +103,9 @@
         about the times we live in.
       </p>
       <p>
-        More can be read on the hermeneutic method in our capsules entitled “A
-        few words on hermeneutics” and “More on hermeneutics”.
+        More can be read on the hermeneutic method in our capsules entitled
+        <nuxt-link to="/hermeneutics">“A few words on hermeneutics”</nuxt-link>
+        and <nuxt-link to="/hermeneutics">“More on hermeneutics”</nuxt-link>.
       </p>
 
       <h3>ABOUT JEAN-CHARLES MERCIER</h3>
@@ -118,7 +115,10 @@
         thought for several decades on politics, institutional economics,
         environmental policies and interpretative methods. He started writing on
         cinema in different Canadian reviews in the 1990’s. More is available on
-        his overall activities at jean-mercier.com
+        his overall activities at
+        <nuxt-link to="https://www.jean-mercier.com/">
+          jean-mercier.com
+        </nuxt-link>
       </p>
       <h3>WHAT THIS FILM SITE IS NOT</h3>
       <p>
@@ -167,11 +167,6 @@
         example, as stated earlier. Such films will not be part of those looked
         at in this site. There are other venues for such political analyses of
         cinema production.
-      </p>
-      <p>
-        After identifying some of the elements our site is not about, let us
-        identify some of the elements that inspire us and discipline our
-        approach.
       </p>
     </div>
   </div>
